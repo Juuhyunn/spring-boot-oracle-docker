@@ -21,6 +21,8 @@ services:
     hostname: oracle
     networks:
       - backend-network
+    stdin_open: true
+    tty: true
     environment:
       ORACLE_ROOT_PASSWORD: root
 #      - ORACLE_ALLOW_REMOTE=true
